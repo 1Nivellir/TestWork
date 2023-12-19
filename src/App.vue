@@ -20,17 +20,18 @@
 
     </v-list>
 
-      <template v-slot:append>
-          <div class="pa-2 d-flex flex-wrap ga-5 pb-5">
-            <v-btn block @click.prevent="open">
+
+    </v-navigation-drawer>
+    <v-app-bar style="display: flex; align-items: center; justify-content: flex-end;">
+
+    <v-app-bar-title class="text-h5">Публикации</v-app-bar-title>
+        <v-btn style="margin-right: 15px;" variant="tonal" @click.prevent="open">
               Войти
             </v-btn>
-            <v-btn block @click.prevent="logout">
+            <v-btn variant="tonal" @click.prevent="logout">
               Выйти
             </v-btn>
-          </div>
-        </template>
-    </v-navigation-drawer>
+    </v-app-bar>
 
     <v-main class="d-flex align-center justify-center" style="min-height: 300px;">
 
